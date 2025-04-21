@@ -1,0 +1,12 @@
+# Custom Prompt for grey and teal wallpapers
+# Colors
+WHITE="\[$(tput setaf 15)\]"
+LIGHT_GREY="\[$(tput setaf 250)\]"
+MEDIUM_GREY="\[$(tput setaf 8)\]"
+DARK_GREY="\[$(tput setaf 245)\]"
+BLACK="\[$(tput setaf 16)\]"
+TEAL="\[$(tput setaf 24)\]"
+# Prompt
+#PS1="jash@pes1ug22am075 $ "
+PS1="${WHITE}\t${WHITE} | ${LIGHT_GREY}\u${TEAL}@${MEDIUM_GREY}\h ${WHITE}| ${DARK_GREY}$(uname -r) ${WHITE}> \n ${TEAL}\w ${WHITE}$ "
+
