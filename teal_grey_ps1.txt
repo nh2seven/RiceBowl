@@ -7,6 +7,5 @@ DARK_GREY="\[$(tput setaf 245)\]"
 BLACK="\[$(tput setaf 16)\]"
 TEAL="\[$(tput setaf 24)\]"
 # Prompt
-#PS1="jash@pes1ug22am075 $ "
 PS1="${WHITE}\t${WHITE} | ${LIGHT_GREY}\u${TEAL}@${MEDIUM_GREY}\h ${WHITE}| ${DARK_GREY}$(uname -r) ${WHITE}> \n ${TEAL}\w ${WHITE}$ "
 
