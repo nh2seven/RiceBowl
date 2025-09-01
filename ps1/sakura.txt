@@ -1,0 +1,14 @@
+# PS1
+# Colors
+RESET="\[$(tput sgr0)\]"
+
+WHITE="\[$(tput setaf 15)\]"
+LIGHT_BLUE="\[$(tput setaf 75)\]"   # user
+CYAN="\[$(tput setaf 81)\]"         # conda env
+PEACH="\[$(tput setaf 223)\]"       # @
+PINK="\[$(tput setaf 204)\]"        # host
+ROYAL_BLUE="\[$(tput setaf 33)\]"   # dir path
+
+# Prompt
+conda_prompt='$(if [ -n "$CONDA_DEFAULT_ENV" ]; then echo "$CONDA_DEFAULT_ENV"; fi)'
+PS1=''$WHITE'┌─ \t | '$LIGHT_BLUE'\u'$PEACH'@'$PINK'\h'$WHITE' | '$CYAN''$conda_prompt' '$WHITE'>\n└─ '$ROYAL_BLUE'\w'$WHITE' \$ '$RESET''
